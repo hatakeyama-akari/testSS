@@ -2,8 +2,8 @@ function init() {
     const URL_FRONT_SIDE = 'https://demo.shapespark.com/api-examples-autoplay/';
     const URL_BACK_SIDE = 'https://usedge.shapespark.com/model/';
 
-    const URL_MEETING = 'https://usedge.shapespark.com/example-room/#meeting-key=MQwo3CGLKhfxhsIV';
-    const MEETING_KEY = 'MQwo3CGLKhfxhsIV';
+    const URL_MEETING = 'https://usedge.shapespark.com/example-room/#meeting-key=MQwo3CGLKhfxhsI';
+    const MEETING_KEY = 'test';
 
     let roomUrl = URL_FRONT_SIDE;
 

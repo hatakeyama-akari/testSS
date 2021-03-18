@@ -6,8 +6,8 @@ var __webpack_exports__ = {};
 function init() {
     var URL_FRONT_SIDE = 'https://demo.shapespark.com/api-examples-autoplay/';
     var URL_BACK_SIDE = 'https://usedge.shapespark.com/model/';
-    var URL_MEETING = 'https://usedge.shapespark.com/example-room/#meeting-key=MQwo3CGLKhfxhsIV';
-    var MEETING_KEY = 'MQwo3CGLKhfxhsIV';
+    var URL_MEETING = 'https://usedge.shapespark.com/example-room/#meeting-key=MQwo3CGLKhfxhsI';
+    var MEETING_KEY = 'test';
     var roomUrl = URL_FRONT_SIDE;
     var iframeElement = document.createElement('iframe');
     iframeElement.setAttribute('src', roomUrl);
