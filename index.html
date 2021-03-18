@@ -19,6 +19,7 @@
             margin-left: -150px;
             display: flex;
             align-items: center;
+            justify-content: center;
         }
 
         #switch-room,
@@ -38,6 +39,32 @@
         #switch-room:hover {
             transform: rotate(45deg);
         }
+
+        #meeting-key-modal {
+            width: 400px;
+            height: 120px;
+            background-color: rgba(33, 42, 59, 0.9);
+            position: absolute;
+            top: 7rem;
+            left: 50%;
+            margin-left: -200px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #meeting-key-modal.show {
+            display: flex;
+        }
+
+        #meeting-key-error-message {
+            display: none;
+        }
+
+        #meeting-key-error-message.show {
+            display: block;
+        }
     </style>
     <script defer src="bundle.js"></script>
 </head>
@@ -46,6 +73,18 @@
     <div class="icon-container">
         <i id="switch-room" class="fa fa-refresh fa-5x"></i>
         <i id="meeting" class="fa fa-users fa-4x"></i>
+    </div>
+    <div id="meeting-key-modal">
+        <p style="margin: 0.5rem; color: white; font-family: Arial, Helvetica, sans-serif;">meeting keyを入力してください</p>
+        <p id="meeting-key-error-message" class="hide"
+            style="margin: 0.1rem; color:tomato; font-family: Arial, Helvetica, sans-serif; font-size: small;">
+            このmeeting keyは現在使われておりません
+        </p>
+        <form style="margin-bottom: 0.5rem;">
+            <input id="meeting-key-input" type="text" value="" />
+            <button type="button" id="meeting-key-submit"> OK </button>
+            <button type="button" id="meeting-key-cancel"> Cancel </button>
+        </form>
     </div>
     <div id="iframe" style="height: 100%;"></div>
 </body>
